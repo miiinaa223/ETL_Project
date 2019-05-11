@@ -21,5 +21,10 @@ create table wages_by_country(
 wage_id int auto_increment not null primary key,
 wage_country_code varchar(3),
 avg_salary int
-)
+);
 
+create table income_groups(
+    country_code varchar(3),
+    region varchar(40),
+    income_group varchar(20)
+)
