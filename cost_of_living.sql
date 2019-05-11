@@ -3,7 +3,7 @@ create database cost_of_living;
 use cost_of_living;
 
 create table country_codes(
-country_code int not null primary key,
+country_code int auto_increment not null primary key,
 country varchar(50),
 three_letter_code varchar(3),
 region varchar(50),
