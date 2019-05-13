@@ -29,22 +29,23 @@ create table income_groups(
     region varchar(40),
     income_group varchar(20)
 );
-
-select col.*, wbc.*, cc.three_letter_code from cost_of_living col
+use QOL_DB;
+select col.*, wbc.*, ig.*, cc.three_letter_code from cost_of_living col
 join country_codes cc on (col.country_name = cc.country)
 join wages_by_country wbc on (wbc.wage_country_code = cc.three_letter_code)
+join income_groups ig on (ig.country_code = cc.three_letter_code)
 
-select * from wages_by_country wbc
-join country_codes cc on (wbc.wage_country_code = cc.three_letter_code)
-order by wage_country_code
+-- select * from wages_by_country wbc
+-- join country_codes cc on (wbc.wage_country_code = cc.three_letter_code)
+-- order by wage_country_code
 
-delete from country_codes
-where country_code is not null
+-- delete from country_codes
+-- where country_code is not null
 
-select * from cost_of_living
-select * from wages_by_country
-order by wage_country_code
+-- select * from cost_of_living
+-- select * from wages_by_country
+-- order by wage_country_code
 
-select * from country_codes
-order by country_code
+-- select * from country_codes
+-- order by country_code
 
