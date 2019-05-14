@@ -1,7 +1,9 @@
-ETL Project Proposal
-Quinton Butterfield / Minami Imoto
-
-
+<h1>ETL Project</h1><br/>
+<h2>Quinton Butterfield / Minami Imoto</h2><br/>
+<br/>
+SQL file titled: qol.sql<br/>
+Jupyter Notebook titled: ETL Project.ipynb<br/>
+<br/>
 •	Goal: <br/>
 o	Attempt to analyze the relationship between average wages and cost of living by country <br/>
 •	Extract: <br/>
