@@ -2,7 +2,7 @@ ETL Project Proposal
 Quinton Butterfield / Minami Imoto
 
 
-•	Goal:
+•	Goal: <br/>
 o	Attempt to analyze the relationship between average wages and cost of living by country
 •	Extract: 
 We pulled data from as follows:
